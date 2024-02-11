@@ -1,8 +1,0 @@
-emp - dept
-
-
-emp -
-id (pk),name,sal,p_id (fk)
-
-passport1 -
-passportid(pk),number,date
