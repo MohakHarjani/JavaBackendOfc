@@ -62,13 +62,5 @@ public class CourseRepo {
 	
 	//======================================================================================================
 	
-	public void updateCourseFaculty(int courseId, Faculty newFaculty)
-	{
-		Course foundCourse = this.findCourseById(courseId);
-		foundCourse.setCourseFaculty(newFaculty);
-		//no need to merge
-		
-	}
 	
-	//=======================================================================================================
 }

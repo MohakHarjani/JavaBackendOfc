@@ -1,10 +1,12 @@
 package com.in28minutes.jpa.hibernate.demo.entity;
 
+import java.util.List;
 import java.util.Objects;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -12,7 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Entity
-@Table(name = "course_1")
+@Table(name = "course_3")
 public class Course {
 	
 	@Id
@@ -22,8 +24,6 @@ public class Course {
 	private String courseName;
 	private double coursePrice;
 	
-	@OneToOne
-	Faculty courseFaculty; //course ki faculty
 
 
 	public Course ()
@@ -71,20 +71,13 @@ public class Course {
 	}
 
 
-	public Faculty getCourseFaculty() {
-		return courseFaculty;
-	}
-
-
-	public void setCourseFaculty(Faculty courseFaculty) {
-		this.courseFaculty = courseFaculty;
-	}
+	
 	//==============================================================================================================
 
 	@Override
 	public String toString() {
 		return "Course [courseId=" + courseId + ", courseName=" + courseName + ", coursePrice=" + coursePrice
-				+ ", courseFaculty=" + courseFaculty + "]";
+				+  "]";
 	}
 	
 	@Override

@@ -47,8 +47,6 @@ public  class Employee {
 	protected Employee() {
 	}
 
-
-	
 	public Employee(String name,double salary) {
 		this.name = name;
 		this.salary = salary;

@@ -12,7 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Entity
-@Table(name = "course_1")
+@Table(name = "course_2")
 public class Course {
 	
 	@Id
@@ -23,7 +23,7 @@ public class Course {
 	private double coursePrice;
 	
 	@OneToOne
-	Faculty courseFaculty; //course ki faculty
+	Faculty courseFaculty;
 
 
 	public Course ()

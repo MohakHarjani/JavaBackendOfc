@@ -36,5 +36,11 @@ public class FacultyRepo {
 		foundFaculty.setExperience(facultyExp);
 	}
 	//===================================================================================
+	public void updateFacultyCourse(int facultyId, Course newCourse)
+	{
+		Faculty foundFaculty = this.findFacultyById(facultyId);
+		foundFaculty.setFacultyCourse(newCourse);
+	}
+
 
 }
