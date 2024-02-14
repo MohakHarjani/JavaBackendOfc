@@ -25,8 +25,10 @@ public class Springbootdemo1Application //implements CommandLineRunner
 		 var ctx = new AnnotationConfigApplicationContext();
 	        ctx.scan("vw.nama.springcontainer.di");
 	        ctx.refresh();
-
-
+	        
+	        Dept d1 = (Dept)ctx.getBean("dep");
+	        Dept d2 = (Dept)ctx.getBean("dep");
+	        System.out.println(d1 == d2); //default singleton
 		
 		Emp emp = (Emp) ctx.getBean("emp2");
 		System.out.println(emp.getEmpid());

@@ -23,10 +23,17 @@ public class CourseRepo {
 	public void saveCourse(Course course)
 	{
 		if (course.getCourseId() == 0) //means it is a pojo and not yet in db or persistence context
+		{
+			System.out.println("Persist called");
 			this.em.persist(course);
+		}
 		
 		else  
+		{
+			System.out.println("Merge called");
+		
 			this.em.merge(course);
+		}
 		//we would use merge when from App we have a retreived entry (using findBy)
 		//and we want to update that retrieved entry (that entry will have a non-zero id)
 		

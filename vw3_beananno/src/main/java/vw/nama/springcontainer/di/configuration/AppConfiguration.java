@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.Scope;
 
 import vw.nama.springcontainer.di.model.*;
 
@@ -42,6 +43,7 @@ public class AppConfiguration {
 	}
 	
 	@Lazy(value = true)
+//	@Scope("prototype")
 	@Bean
 	public Dept dep()
 	{

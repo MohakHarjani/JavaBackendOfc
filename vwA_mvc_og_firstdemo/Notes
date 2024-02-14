@@ -1,0 +1,4 @@
+https://docs.spring.io/spring-boot/docs/2.2.6.RELEASE/reference/html/spring-boot-features.html#boot-features-external-config-vs-value
+https://blog.indrek.io/articles/type-safe-configuration-in-spring-boot/#:~:text=Using%20%40ConfigurationProperties%20allows%20you%20to,Value%20annotation%20for%20a%20moment.
+https://tuhrig.de/why-using-springs-value-annotation-is-bad/
+https://dev.to/scottshipp/type-safe-configuration-properties-in-spring-boot-2-d7p

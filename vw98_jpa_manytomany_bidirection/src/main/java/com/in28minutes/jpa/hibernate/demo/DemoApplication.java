@@ -46,8 +46,22 @@ public class DemoApplication implements CommandLineRunner {
 		//ONE FACULTY MAPS TO MANY COURSES
 		//Same course can be added to many faculties
 		
-		Course c1 = new Course("Accounts", 1000);	 cr.saveCourse(c1);  //id-1
+		Course c1 = new Course("Accounts", 1000);	 
+		System.out.println("BEFORE" + c1);
+		cr.saveCourse(c1);  //id-1
+		System.out.println("AFTER" + c1);
+		
+		Course temp = new Course("Accounts", 9000);
+		temp.setCourseId(1);
+		cr.saveCourse(temp);
+		
+		System.out.println("AB DEKHO====> " + temp);
+		System.out.println("AB DEKHO====> " + c1);
+		
+		
+		
 		Course c2 = new Course("BST", 3000);	 cr.saveCourse(c2); //id-2
+		
 		Faculty f1 = new Faculty("Mohak", 2, LocalDate.now(), Arrays.asList(c1, c2)); fr.saveFaculty(f1); //id-3
 		
 		
