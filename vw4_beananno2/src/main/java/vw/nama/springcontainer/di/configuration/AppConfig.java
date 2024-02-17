@@ -19,12 +19,12 @@ public class AppConfig {
         return new FirstBean();
     }
 
-    @Bean("secondBean")
+    @Bean
     public SecondBean secondBean() {
         return new SecondBean();
     }
 
-    @Bean("thirdBean")
+    @Bean
     public ThirdBean thirdBean() {
         return new ThirdBean();
     }
