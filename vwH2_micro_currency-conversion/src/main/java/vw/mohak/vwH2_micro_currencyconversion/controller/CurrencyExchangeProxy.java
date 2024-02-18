@@ -14,7 +14,7 @@ import vw.mohak.vwH2_micro_currencyconversion.entity.CurrencyConversion;
 //the naming registry of Eureka server
 //Fiegn client will load balance requests to instnces of "currency-exchange"
 
-@FeignClient("currency-exchange") //write the exact "name" of the microservice which you want to call
+@FeignClient("currency-exchange-service") //write the exact "name" of the microservice which you want to call
 public interface CurrencyExchangeProxy {
 	
 	//this get call will be made by feign-client to eureka
