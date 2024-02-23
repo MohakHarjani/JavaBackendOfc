@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Scope;
 import vw.nama.springcontainer.di.model.*;
 
 @Configuration
-@PropertySource("application.properties")
+//@PropertySource("application.properties")
 public class AppConfiguration {
 	
 	@Value("${employee.id}")

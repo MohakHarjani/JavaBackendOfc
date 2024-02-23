@@ -33,6 +33,7 @@ public class Springbootdemo1Application //implements CommandLineRunner
 		Emp emp = (Emp) ctx.getBean("emp2");
 		System.out.println(emp.getEmpid());
 		System.out.println(emp.calcAnnSal());
+		System.out.println(emp);
 		
 		 Dept d = emp.getDept();
 		System.out.println(d.getDeptid());
